@@ -1,0 +1,23 @@
+{
+  "name": "newman_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "newman": "^5.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindaugasBernatavicius/BITNewmanTests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MindaugasBernatavicius/BITNewmanTests/issues"
+  },
+  "homepage": "https://github.com/MindaugasBernatavicius/BITNewmanTests#readme"
+}
