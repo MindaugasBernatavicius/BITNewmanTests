@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "bb4634bd-bf77-48df-9a77-a3b36eb358d7",
+		"name": "BIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"{{$randomInt}}\",\r\n    \"name\": \"Vytautas\",\r\n    \"surname\": \"Ž\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/app4/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"app4",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/app3/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"app3",
+						"api",
+						"v1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST DELETE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"A\",\r\n    \"surname\":\"B\",\r\n    \"yob\":\"1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/testing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET single author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/app3/api/v1/authors/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"app3",
+						"api",
+						"v1",
+						"authors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\": 666,\r\n    \"title\": \"Hunger Games\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/libraryQa2/public/index.php/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"libraryQa2",
+						"public",
+						"index.php",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\": 666,\r\n    \"title\": \"Hunger Games\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/libraryQa2/public/index.php/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"libraryQa2",
+						"public",
+						"index.php",
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
